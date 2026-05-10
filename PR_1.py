@@ -1,3 +1,4 @@
+#Data Wrangling, I Using any open source dataset (e.g., data.csv).import all python libraries.load the dataset into pandas data frame.Perform Data Preprocessing ,Data Formatting and Data Normalization and turn categorical variables into quantitative variables in Python.
 # Step_1
 import pandas as pd
 
