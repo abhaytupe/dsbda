@@ -1,3 +1,4 @@
+#Descriptive Statistics - Measures of Central Tendency and variability: Use any open source dataset (e.g., data.csv) to provide summary statistics (mean, median, minimum, maximum, standard deviation) for a dataset (age, income etc.) with numeric variables grouped by one of the qualitative (categorical) variable and write a python program to display some basic statistical details like percentile, mean, standard deviation etc. of the species of ‘Iris-setosa’, ‘Iris-versicolor’ and ‘Iris- versicolor’ of iris.csv dataset. 
 #step 1
 import pandas as pd
 import zipfile
