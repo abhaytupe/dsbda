@@ -1,3 +1,4 @@
+#Data Analytics II :  Implement logistic regression using Python to perform classification on   Social_Network_Ads.csv dataset. And compute confusion matrix to find TP, FP, TN, FN, Accuracy, Error rate, Precision.Recall on the given dataset. 
 # step1:import the files
 import pandas as pd
 from sklearn.model_selection import train_test_split
