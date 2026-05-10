@@ -1,3 +1,4 @@
+#Data Analytics III Implement Simple Naïve Bayes classification algorithm using Python on iris.csv dataset. and compute confusion matrix to find TP, FP, TN, FN, Accuracy, Error rate, Precision, Recall on the given dataset. 
 #step 1: import the libraries
 import pandas as pd
 import numpy as np
