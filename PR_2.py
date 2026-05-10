@@ -1,3 +1,4 @@
+#Data Wrangling II  :Create an  Academic performance dataset of students and perform the operations using Python to scan  all variables for missing values and inconsistencies ,scan all numeric variables for outliers and apply data transformations on at least one of the variables to decrease the skewness and convert the distribution into a normal distribution. 
 # Step_1
 import pandas as pd
 import numpy as np
