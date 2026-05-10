@@ -1,3 +1,4 @@
+#Text Analytics Extract Sample document and apply following document preprocessing methods:Tokenization, POS Tagging, stop words removal, Stemming and Lemmatization and  Create representation of document by calculating Term Frequency and Inverse Document Frequency. 
 #step 1: import the libraries
 import pandas as pd
 import numpy as np
