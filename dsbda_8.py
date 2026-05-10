@@ -1,3 +1,4 @@
+# Data Visualization I : Use the inbuilt dataset 'titanic.Use the Seaborn library to see if we can find any patterns in the data.Write a code to check how the price of the ticket (column name: 'fare') for each passenger is distributed by plotting a histogram. 
 # step 1 : import the libraries
 import seaborn as sns
 import matplotlib.pyplot as plt 
