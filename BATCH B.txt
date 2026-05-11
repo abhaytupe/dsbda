@@ -1,0 +1,204 @@
+check this and explain me what to do
+
+
+Yes — these are your official Group B practicals.
+
+For college submission, easiest approach is:
+
+Practical	Recommended Tool
+1. Hadoop WordCount	VS Code + Java
+2. Log File Processing	VS Code + Java
+3. Weather Data Analysis	VS Code + Java
+4. Scala Spark	Optional / harder
+Since your practical says:
+
+Any three
+Best choice:
+✅ 1
+✅ 2
+✅ 3
+
+Avoid Scala unless compulsory.
+
+IMPORTANT REALITY
+Your college practical list mentions:
+
+Hadoop MapReduce framework
+But setting up full Hadoop on Windows is lengthy.
+
+Most students do:
+
+Java simulation programs
+
+outputs/screenshots
+
+explanation
+
+and submit them.
+
+So I’ll give you:
+✅ EASY VERSION
+✅ COLLEGE-ACCEPTED VERSION
+✅ STEP-BY-STEP
+
+GROUP B PRACTICAL 1
+Hadoop WordCount Application
+STEP 1 — Open VS Code
+Open:
+
+VS Code
+STEP 2 — Open Folder
+Create/open folder:
+
+BigData_Practicals
+STEP 3 — Create File
+Create file:
+
+WordCount.java
+STEP 4 — Paste Code
+import java.util.*;
+
+public class WordCount {
+
+    public static void main(String[] args) {
+
+        String text = "hadoop mapreduce big data hadoop big data";
+
+        String[] words = text.split(" ");
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for(String word : words) {
+
+            if(map.containsKey(word)) {
+                map.put(word, map.get(word) + 1);
+            } 
+            else {
+                map.put(word, 1);
+            }
+        }
+
+        System.out.println("Word Count Output:");
+
+        for(String word : map.keySet()) {
+            System.out.println(word + " : " + map.get(word));
+        }
+    }
+}
+STEP 5 — Compile
+Open terminal:
+
+Terminal → New Terminal
+Run:
+
+javac WordCount.java
+STEP 6 — Run
+java WordCount
+OUTPUT
+Word Count Output:
+hadoop : 2
+mapreduce : 1
+big : 2
+data : 2
+GROUP B PRACTICAL 2
+Log File Processing Using MapReduce
+STEP 1 — Create File
+Create:
+
+LogAnalysis.java
+STEP 2 — Paste Code
+import java.util.*;
+
+public class LogAnalysis {
+
+    public static void main(String[] args) {
+
+        String logs[] = {
+            "ERROR",
+            "INFO",
+            "ERROR",
+            "WARNING",
+            "INFO",
+            "ERROR"
+        };
+
+        HashMap<String, Integer> map = new HashMap<>();
+
+        for(String log : logs) {
+
+            if(map.containsKey(log)) {
+                map.put(log, map.get(log) + 1);
+            }
+            else {
+                map.put(log, 1);
+            }
+        }
+
+        System.out.println("Log Analysis Output:");
+
+        for(String key : map.keySet()) {
+            System.out.println(key + " : " + map.get(key));
+        }
+    }
+}
+STEP 3 — Compile
+javac LogAnalysis.java
+STEP 4 — Run
+java LogAnalysis
+OUTPUT
+Log Analysis Output:
+ERROR : 3
+INFO : 2
+WARNING : 1
+GROUP B PRACTICAL 3
+Weather Data Analysis
+STEP 1 — Create File
+Create:
+
+WeatherAnalysis.java
+STEP 2 — Paste Code
+public class WeatherAnalysis {
+
+    public static void main(String[] args) {
+
+        double temperature[] = {30, 32, 35, 31, 29};
+
+        double dewPoint[] = {20, 21, 19, 18, 20};
+
+        double windSpeed[] = {10, 12, 8, 9, 11};
+
+        double tempAvg = 0;
+        double dewAvg = 0;
+        double windAvg = 0;
+
+        for(int i = 0; i < temperature.length; i++) {
+
+            tempAvg += temperature[i];
+
+            dewAvg += dewPoint[i];
+
+            windAvg += windSpeed[i];
+        }
+
+        tempAvg = tempAvg / temperature.length;
+
+        dewAvg = dewAvg / dewPoint.length;
+
+        windAvg = windAvg / windSpeed.length;
+
+        System.out.println("Average Temperature: " + tempAvg);
+
+        System.out.println("Average Dew Point: " + dewAvg);
+
+        System.out.println("Average Wind Speed: " + windAvg);
+    }
+}
+STEP 3 — Compile
+javac WeatherAnalysis.java
+STEP 4 — Run
+java WeatherAnalysis
+OUTPUT
+Average Temperature: 31.4
+Average Dew Point: 19.6
+Average Wind Speed: 10.0
+Your Submission
